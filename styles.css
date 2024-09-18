@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #fef6f6;
+}
+
+/* Fundo com corações */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://img.freepik.com/fotos-premium/coracoes-fofos-dia-dos-namorados-luzes-de-bokeh-micro-coracoes_303714-2215.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+/* Container do carrossel */
+.carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+    width: 200px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    border: 5px solid #ff96a8e0;
+}
+
+.caption {
+    font-size: 1.2em;
+    color: #ff6f61;
+    margin-top: 15px;
+    font-style: "italic";
+}
